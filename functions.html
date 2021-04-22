@@ -1,0 +1,23 @@
+<script>
+    //named function
+    function add(){
+        alert("hello srikanth its a named function")
+    }
+    add();
+
+    //named function with parameters
+    function add1(a,b,c){
+        alert(a*b+c);
+    }
+    add1(5,9,10);
+    //anonymus function
+    var x=function (a,b,c){
+        alert(a*b*c);
+    }
+    x(5,9,10);
+    //self invoke
+
+    (function(a,b){
+        alert(a*b);
+    })(5,10); 
+</script>
