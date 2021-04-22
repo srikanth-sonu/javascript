@@ -1,0 +1,71 @@
+<script>
+    //literal type
+    let employee=["sonu","chary","srikanth","siraj",1,2,3,4]
+        for(i=0;i<employee.length;i++){
+            document.write(employee[i]+"<br/>");
+        }
+
+    //type2
+    
+    let emp = new Array();
+    emp[0] = "sonu";
+    emp[1] = "btech";
+    emp[2] = 25
+    emp[3] = true;    
+
+    for(var i=0;i<=emp.length;i++){
+        document.write(emp[i]+"<br/>");
+    }
+
+    //array constructor
+    let empl = new Array("sonu","srikanth","chary");
+    for(i=0;i<empl.length;i++){
+        console.log(empl[i]);
+    }
+
+
+
+   /* let myArray = [1,1,2,2,3,6,9,7,8,0,3,4,5,5]
+    let duplicates=[]
+
+    let tempArray = [1,1,2,2,3,6,9,7,8,0,3,4,5,5].sort();
+    console.log(tempArray);
+
+    for (let i=0; i<tempArray.length;i++){
+        if (tempArray[i+1]===tempArray[i])[
+            duplicates.push(tempArray[i])
+        ]
+    }
+    console.log(duplicates)*/
+
+
+
+    let names=["srikanth","siraj",1,2,3,4,3,2,1,"sonu","siraj","srikanth"]
+    let dupl= []
+    let tempAr=names.sort();
+    
+    console.log(tempAr);
+    for(i=0;i<tempAr.length;i++){
+        if(tempAr[i+1]===tempAr[i]){
+            dupl.push(tempAr[i])
+        }
+    }
+
+    console.log(dupl);
+
+
+
+   let a=["srikanth",1,3,5,7,7,5,3,1,2,4,"srikanth","sonu"]
+    let b=[]
+    let c=a.sort();
+
+    console.log(c);
+
+    for(i=0;i<c.length;i++){
+        if(b.indexOf (a[i])===-1){
+            b.push(a[i]);
+        }
+    }
+    console.log(b);
+
+</script>
